@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* Karmina, Bold */
+@font-face {
+  font-family: "Karmina";
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("fonts/ufonts.com_karmina-bold-opentype.otf"); }
+/* Karmina, Bold Italic */
+@font-face {
+  font-family: "Karmina";
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("fonts/ufonts.com_karmina-bolditalic-opentype.otf"); }
+/* Karmina, Italic */
+@font-face {
+  font-family: "Karmina";
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("fonts/ufonts.com_karmina-italic-opentype.otf"); }
+/* Karmina, Regular */
+@font-face {
+  font-family: "Karmina";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("fonts/ufonts.com_karmina-regular-opentype.otf"); }
+almanac {
+  font-family: Karmina;
+  font-size: 8pt;
+  display: block; }
+  almanac > name {
+    display: block;
+    font-weight: bold;
+    font-size: 18pt;
+    text-align: center; }
+  almanac tags {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize; }
+    almanac tags tag {
+      display: inline-block; }
+      almanac tags tag:not(:first-child):before {
+        display: inline-block;
+        content: "• ";
+        padding-right: 2pt; }
+  almanac region {
+    display: block;
+    page-break-before: always;
+    column-count: 2;
+    column-gap: 12pt;
+    column-fill: auto; }
+    almanac region > name {
+      column-span: all;
+      display: block;
+      font-size: 16pt;
+      font-weight: bold;
+      text-align: center; }
+    almanac region > tags {
+      column-span: all; }
+    almanac region details {
+      margin-top: 1em;
+      display: block; }
+      almanac region details > * {
+        display: block; }
+        almanac region details > *:before {
+          content: "☐ ";
+          padding-right: 2pt; }
+      almanac region details:before {
+        display: block;
+        text-transform: capitalize;
+        font-size: 16pt;
+        font-weight: bold;
+        border-top: solid black 1px;
+        margin: 2pt 0;
+        content: "Details"; }
+      almanac region details :first-child {
+        border-top: dotted black 1px;
+        padding-top: 2pt; }
+    almanac region discoveries {
+      margin-top: 1em; }
+      almanac region discoveries:before {
+        display: block;
+        text-transform: capitalize;
+        font-size: 16pt;
+        font-weight: bold;
+        border-top: solid black 1px;
+        margin: 2pt 0;
+        content: "Discoveries"; }
+      almanac region discoveries discovery {
+        display: block;
+        margin-top: 1em;
+        border-top: dotted black 1px;
+        padding-top: 2pt; }
+        almanac region discoveries discovery type {
+          font-weight: bold;
+          display: inline-block;
+          text-transform: small-caps; }
+          almanac region discoveries discovery type:after {
+            display: inline-block;
+            content: "• ";
+            padding-right: 2pt; }
+        almanac region discoveries discovery name {
+          font-weight: bold;
+          display: inline-block;
+          text-transform: small-caps; }
+        almanac region discoveries discovery questions {
+          margin-top: 2pt;
+          display: block; }
+          almanac region discoveries discovery questions > * {
+            display: block; }
+            almanac region discoveries discovery questions > *:before {
+              content: "☐ ";
+              padding-right: 2pt; }
+  almanac paragraph {
+    margin-top: 2pt;
+    display: block; }

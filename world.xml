@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="world.xslt"?>
+<?xml-stylesheet type="text/css" href="world.css" ?>
+<?whitespace-handling use-tags?>
+<almanac>
+	<name>The World of Testing</name>
+	<region>
+		<name>The Dark Land</name>
+		<tags>
+			<tag>Temperate</tag>
+			<tag>Wetland</tag>
+			<tag>Evil</tag>
+		</tags>
+		<details>
+			<detail>Extremely humid</detail>
+			<detail>Insect hum, amphibian croaking</detail>
+			<detail>The sound of drums</detail>
+			<detail>Permanent cloud cover</detail>
+		</details>
+		<discoveries>
+			<discovery>
+				<type>
+					Area
+				</type>
+				<name>
+					River of Steam
+				</name>
+				<tags>
+					<tag>Unsafe</tag>
+					<tag>Neutral</tag>
+				</tags>
+				<paragraph>
+					This waterway is the only route into the Dark Land that doesn't require you to make the arduous journey across steep mountains.
+				</paragraph>
+				<paragraph>
+					Mist pours off the river, reducing visibility to a few meters. 
+				</paragraph>
+				<questions>
+					<question>
+						What creatures lurk beneath the water?
+					</question>
+					<question>
+						What offerings do the local tribe demand in exchange for passage?
+					</question>
+					<question>
+						What about the water is of special interest to a master of the arcane arts?
+					</question>
+				</questions>
+			</discovery>
+			<discovery>
+				<type>
+					Area
+				</type>
+				<name>
+					River of Steam
+				</name>
+				<tags>
+					<tag>Unsafe</tag>
+					<tag>Neutral</tag>
+				</tags>
+				<paragraph>
+					This waterway is the only route into the Dark Land that doesn't require you to make the arduous journey across steep mountains.
+				</paragraph>
+				<paragraph>
+					Mist pours off the river, reducing visibility to a few meters. 
+				</paragraph>
+				<questions>
+					<question>
+						What creatures lurk beneath the water?
+					</question>
+					<question>
+						What offerings do the local tribe demand in exchange for passage?
+					</question>
+					<question>
+						What about the water is of special interest to a master of the arcane arts?
+					</question>
+				</questions>
+			</discovery>
+			<discovery>
+				<type>
+					Area
+				</type>
+				<name>
+					River of Steam
+				</name>
+				<tags>
+					<tag>Unsafe</tag>
+					<tag>Neutral</tag>
+				</tags>
+				<paragraph>
+					This waterway is the only route into the Dark Land that doesn't require you to make the arduous journey across steep mountains.
+				</paragraph>
+				<paragraph>
+					Mist pours off the river, reducing visibility to a few meters. 
+				</paragraph>
+				<questions>
+					<question>
+						What creatures lurk beneath the water?
+					</question>
+					<question>
+						What offerings do the local tribe demand in exchange for passage?
+					</question>
+					<question>
+						What about the water is of special interest to a master of the arcane arts?
+					</question>
+				</questions>
+			</discovery>
+			<discovery>
+				<type>
+					Area
+				</type>
+				<name>
+					River of Steam
+				</name>
+				<tags>
+					<tag>Unsafe</tag>
+					<tag>Neutral</tag>
+				</tags>
+				<paragraph>
+					This waterway is the only route into the Dark Land that doesn't require you to make the arduous journey across steep mountains.
+				</paragraph>
+				<paragraph>
+					Mist pours off the river, reducing visibility to a few meters. 
+				</paragraph>
+				<questions>
+					<question>
+						What creatures lurk beneath the water?
+					</question>
+					<question>
+						What offerings do the local tribe demand in exchange for passage?
+					</question>
+					<question>
+						What about the water is of special interest to a master of the arcane arts?
+					</question>
+				</questions>
+			</discovery>
+		</discoveries>
+	</region>
+</almanac>

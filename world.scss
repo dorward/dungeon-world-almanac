@@ -1,0 +1,173 @@
+/* Karmina, Bold */
+@font-face {
+    font-family: "Karmina";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("fonts/ufonts.com_karmina-bold-opentype.otf");
+}
+
+/* Karmina, Bold Italic */
+@font-face {
+    font-family: "Karmina";
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("fonts/ufonts.com_karmina-bolditalic-opentype.otf");
+}
+
+/* Karmina, Italic */
+@font-face {
+    font-family: "Karmina";
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("fonts/ufonts.com_karmina-italic-opentype.otf");
+}
+
+/* Karmina, Regular */
+@font-face {
+    font-family: "Karmina";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("fonts/ufonts.com_karmina-regular-opentype.otf");
+}
+
+$fontHuge: 24pt;
+$fontLarge: 18pt;
+$fontEnlarged: 16pt;
+$fontStandard: 8pt;
+
+@mixin list {
+    display: block;
+
+    & > * {
+        display: block;
+
+        &:before {
+            content: "☐ ";
+            padding-right: 2pt;
+        }
+    }
+}
+
+@mixin section {
+    display: block;
+    text-transform: capitalize;
+    font-size: $fontEnlarged;
+    font-weight: bold;
+    border-top: solid black 1px;
+    margin: 2pt 0;
+}
+
+almanac {
+    font-family: Karmina;
+    font-size: $fontStandard;
+    display: block;
+
+    & > name {
+        display: block;
+        font-weight: bold;
+        font-size: $fontLarge;
+        text-align: center;
+    }
+
+    tags {
+        display: block;
+        font-style: italic;
+        text-align: center;
+        text-transform: capitalize;
+
+        tag {
+            display: inline-block;
+
+            &:not(:first-child):before {
+                display: inline-block;
+                content: "• ";
+                padding-right: 2pt;
+            }
+        }
+    }
+
+    region {
+        display: block;
+        page-break-before: always;
+        column-count: 2;
+        column-gap: 12pt;
+        column-fill: auto;
+
+        & > name {
+            column-span: all;
+            display: block;
+            font-size: $fontEnlarged;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        & > tags {
+            column-span: all;
+        }
+
+        details {
+            margin-top: 1em;
+
+            @include list;
+
+            &:before {
+                @include section;
+                content: "Details";
+            }
+
+            :first-child {
+            	border-top: dotted black 1px;
+            	padding-top: 2pt;
+            }
+        }
+
+        discoveries {
+            margin-top: 1em;
+
+            &:before {
+                @include section;
+
+                content: "Discoveries";
+            }
+
+            discovery {
+                display: block;
+                margin-top: 1em;
+                border-top: dotted black 1px;
+                padding-top: 2pt;
+
+                type {
+                    font-weight: bold;
+                    display: inline-block;
+                    text-transform: small-caps;
+
+                    &:after {
+                        display: inline-block;
+                        content: "• ";
+                        padding-right: 2pt;
+                    }
+                }
+
+                name {
+                    font-weight: bold;
+                    display: inline-block;
+                    text-transform: small-caps;
+                }
+
+                questions {
+                	margin-top: 2pt;
+                    @include list;
+                }
+            }
+        }
+    }
+
+    paragraph {
+    	margin-top: 2pt;
+        display: block;
+    }
+}
